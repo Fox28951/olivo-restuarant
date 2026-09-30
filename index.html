@@ -1,0 +1,458 @@
+<!doctype html>
+<!-- Generated from data/content.json by lib/render.js. Edit content in the admin panel (/admin), not here. -->
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Olivo — Italian Restaurant &amp; Bar in London</title>
+  <meta name="description" content="Olivo is an Italian restaurant and bar on the Thames in London: handmade pasta, wood-fired pizza, steaks and signature cocktails. Book a table online.">
+  <meta name="theme-color" content="#0f0d0b">
+
+  <meta property="og:title" content="Olivo — Italian Restaurant &amp; Bar in London">
+  <meta property="og:description" content="Olivo is an Italian restaurant and bar on the Thames in London: handmade pasta, wood-fired pizza, steaks and signature cocktails. Book a table online.">
+  <meta property="og:image" content="assets/img/interior.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/interior.jpg" imagesrcset="assets/img/interior-sm.jpg 800w, assets/img/interior.jpg 1600w" imagesizes="100vw">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Header ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Olivo — home">
+        <span class="logo__mark" aria-hidden="true">O</span>
+        <span class="logo__text">Olivo</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#menu">Menu</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#gallery">Gallery</a></li>
+          <li><a class="nav__link" href="#contacts">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta" href="#booking">Book a table</a>
+      </nav>
+
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="top">
+      <img class="hero__bg"
+           src="assets/img/interior.jpg"
+           srcset="assets/img/interior-sm.jpg 800w, assets/img/interior.jpg 1600w"
+           sizes="100vw"
+           alt="The Olivo dining room in the evening"
+           fetchpriority="high">
+      <div class="container hero__content">
+        <p class="eyebrow">Ristorante &amp; Bar · Since 2016</p>
+        <h1 class="hero__title">Olivo</h1>
+        <p class="hero__lead">Italian cooking, a wood-fired oven and panoramic views over the Thames. A place for long dinners and important evenings.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="#booking">Book a table</a>
+          <a class="btn btn--ghost btn--lg" href="#menu">View the menu</a>
+        </div>
+        <ul class="hero__facts">
+          <li><strong>From 12:00</strong><span>open every day</span></li>
+          <li><strong>12 Riverside Walk, Bankside</strong><span>London SE1 9XX</span></li>
+        </ul>
+      </div>
+      <a class="hero__scroll" href="#menu" aria-label="Scroll to the menu"></a>
+    </section>
+
+    <!-- ============ Menu ============ -->
+    <section class="section" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Menu</p>
+          <h2 class="section__title" id="menu-title">Seasonal Italian classics</h2>
+          <p class="section__lead">Cooked with British farm produce and imported Italian cheeses. Our pasta is made by hand every morning.</p>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Menu sections">
+          <button class="tabs__btn" role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true">Pasta &amp; Risotto</button>
+          <button class="tabs__btn" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">Pizza</button>
+          <button class="tabs__btn" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Mains</button>
+          <button class="tabs__btn" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1">Desserts</button>
+          <button class="tabs__btn" role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false" tabindex="-1">Bar</button>
+        </div>
+
+        <div class="menu-panel" role="tabpanel" id="panel-0" aria-labelledby="tab-0" tabindex="0">
+          <ul class="menu-list">
+            <li class="dish">
+              <img class="dish__img" src="assets/img/pasta-sm.jpg" alt="Fettuccine with King Prawns" width="800" height="533" loading="lazy">
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Fettuccine with King Prawns</h3><span class="dish__price">£24</span></div>
+                <p class="dish__desc">Tiger prawns, cream sauce, cherry tomatoes, Parmigiano Reggiano, micro herbs.</p>
+                <span class="tag">Signature</span>
+              </div>
+            </li>
+            <li class="dish">
+              <img class="dish__img" src="assets/img/risotto-sm.jpg" alt="Wild Mushroom Risotto" width="800" height="533" loading="lazy">
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Wild Mushroom Risotto</h3><span class="dish__price">£21</span></div>
+                <p class="dish__desc">Carnaroli rice, porcini and chestnut mushrooms, truffle oil, aged Parmesan.</p>
+                <span class="tag tag--veg">Vegetarian</span>
+              </div>
+            </li>
+            <li class="dish">
+              <img class="dish__img" src="assets/img/lasagna-sm.jpg" alt="Lasagne Bolognese" width="800" height="533" loading="lazy">
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Lasagne Bolognese</h3><span class="dish__price">£19</span></div>
+                <p class="dish__desc">Beef ragù slow-cooked for six hours, béchamel, mozzarella, fresh basil.</p>
+                
+              </div>
+            </li>
+            <li class="dish dish--text">
+              
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Spaghetti Carbonara</h3><span class="dish__price">£17</span></div>
+                <p class="dish__desc">Guanciale, egg yolk, Pecorino Romano, freshly cracked black pepper.</p>
+                
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1" tabindex="0" hidden>
+          <ul class="menu-list">
+            <li class="dish">
+              <img class="dish__img" src="assets/img/pizza-sm.jpg" alt="Margherita" width="800" height="533" loading="lazy">
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Margherita</h3><span class="dish__price">£14</span></div>
+                <p class="dish__desc">48-hour sourdough, San Marzano tomatoes, fior di latte, basil.</p>
+                <span class="tag tag--veg">Vegetarian</span>
+              </div>
+            </li>
+            <li class="dish dish--text">
+              
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Diavola</h3><span class="dish__price">£17</span></div>
+                <p class="dish__desc">Spicy spianata salami, mozzarella, tomato, chilli honey.</p>
+                <span class="tag tag--hot">Spicy</span>
+              </div>
+            </li>
+            <li class="dish dish--text">
+              
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Quattro Formaggi</h3><span class="dish__price">£17</span></div>
+                <p class="dish__desc">Mozzarella, gorgonzola, taleggio, Parmesan, toasted walnuts.</p>
+                
+              </div>
+            </li>
+            <li class="dish dish--text">
+              
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Prosciutto &amp; Rocket</h3><span class="dish__price">£19</span></div>
+                <p class="dish__desc">18-month Parma ham, rocket, cherry tomatoes, shaved Parmesan.</p>
+                
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" tabindex="0" hidden>
+          <ul class="menu-list">
+            <li class="dish">
+              <img class="dish__img" src="assets/img/steak-sm.jpg" alt="Grilled Ribeye" width="800" height="533" loading="lazy">
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Grilled Ribeye</h3><span class="dish__price">£42</span></div>
+                <p class="dish__desc">300g marbled beef, asparagus, roasted garlic, mashed potato, red wine jus.</p>
+                <span class="tag">Chef&#39;s choice</span>
+              </div>
+            </li>
+            <li class="dish dish--text">
+              
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Wood-roasted Sea Bass</h3><span class="dish__price">£32</span></div>
+                <p class="dish__desc">Whole sea bass, lemon, capers, rosemary new potatoes.</p>
+                
+              </div>
+            </li>
+            <li class="dish dish--text">
+              
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Ossobuco alla Milanese</h3><span class="dish__price">£34</span></div>
+                <p class="dish__desc">Braised veal shank, saffron risotto, gremolata.</p>
+                
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" tabindex="0" hidden>
+          <ul class="menu-list">
+            <li class="dish">
+              <img class="dish__img" src="assets/img/tiramisu-sm.jpg" alt="Tiramisù" width="800" height="533" loading="lazy">
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Tiramisù</h3><span class="dish__price">£10</span></div>
+                <p class="dish__desc">Mascarpone, savoiardi, espresso, cocoa, fresh berries.</p>
+                <span class="tag">Signature</span>
+              </div>
+            </li>
+            <li class="dish dish--text">
+              
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Panna Cotta</h3><span class="dish__price">£9</span></div>
+                <p class="dish__desc">Vanilla cream, passion fruit coulis, pistachio crumb.</p>
+                
+              </div>
+            </li>
+            <li class="dish dish--text">
+              
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Affogato</h3><span class="dish__price">£7</span></div>
+                <p class="dish__desc">Vanilla gelato drowned in a double espresso.</p>
+                
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-panel" role="tabpanel" id="panel-4" aria-labelledby="tab-4" tabindex="0" hidden>
+          <ul class="menu-list">
+            <li class="dish">
+              <img class="dish__img" src="assets/img/bar-sm.jpg" alt="Negroni" width="800" height="533" loading="lazy">
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Negroni</h3><span class="dish__price">£14</span></div>
+                <p class="dish__desc">Gin, Campari, sweet vermouth, orange zest.</p>
+                <span class="tag">Classic</span>
+              </div>
+            </li>
+            <li class="dish dish--text">
+              
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Aperol Spritz</h3><span class="dish__price">£13</span></div>
+                <p class="dish__desc">Aperol, Prosecco, soda, orange slice.</p>
+                
+              </div>
+            </li>
+            <li class="dish dish--text">
+              
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Olivo Martini</h3><span class="dish__price">£15</span></div>
+                <p class="dish__desc">Our olive-oil-washed martini with Nocellara olives.</p>
+                
+              </div>
+            </li>
+            <li class="dish dish--text">
+              
+              <div class="dish__body">
+                <div class="dish__head"><h3 class="dish__name">Wine by the Glass</h3><span class="dish__price">from £9</span></div>
+                <p class="dish__desc">More than 40 wines from Tuscany, Piedmont and Veneto. Ask our sommelier.</p>
+                
+              </div>
+            </li>
+          </ul>
+        </div>
+        <p class="menu-note">A discretionary 12.5% service charge will be added to your bill. Please tell your server about any allergies.</p>
+      </div>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section class="section section--alt" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about__media">
+          <img class="about__img about__img--main" src="assets/img/bar-sm.jpg"
+               srcset="assets/img/bar-sm.jpg 800w, assets/img/bar.jpg 1600w"
+               sizes="(min-width: 900px) 40vw, 100vw"
+               alt="Inside Olivo" width="800" height="533" loading="lazy">
+          <img class="about__img about__img--accent" src="assets/img/pizza-sm.jpg" alt="" width="800" height="533" loading="lazy">
+        </div>
+        <div class="about__text">
+          <p class="eyebrow">About us</p>
+          <h2 class="section__title" id="about-title">An Italian dinner with a view of the city</h2>
+          <p>Olivo started with a simple idea: cook honest Italian food the way it is cooked at home in Tuscany, and serve it somewhere you want to stay a little longer.</p>
+          <p>Olive trees grow in the dining room, the wood-fired oven is always lit, and the floor-to-ceiling windows look out across the Thames to St Paul&#39;s. The bar stays open until the last guest leaves, and our sommelier will find a wine for any dish.</p>
+          <ul class="stats">
+            <li><strong>10</strong><span>years on the river</span></li>
+            <li><strong>40+</strong><span>wines by the glass</span></li>
+            <li><strong>90</strong><span>seats inside and on the terrace</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Gallery ============ -->
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Gallery</p>
+          <h2 class="section__title" id="gallery-title">Inside Olivo</h2>
+        </header>
+
+        <ul class="gallery">
+          <li class="gallery__item gallery__item--wide">
+            <button class="gallery__btn" type="button" data-full="assets/img/interior.jpg">
+              <img src="assets/img/interior-sm.jpg" alt="The dining room at night with a view across the river" loading="lazy" width="800" height="533">
+            </button>
+          </li>
+          <li class="gallery__item">
+            <button class="gallery__btn" type="button" data-full="assets/img/steak.jpg">
+              <img src="assets/img/steak-sm.jpg" alt="Grilled ribeye steak" loading="lazy" width="800" height="533">
+            </button>
+          </li>
+          <li class="gallery__item">
+            <button class="gallery__btn" type="button" data-full="assets/img/pasta.jpg">
+              <img src="assets/img/pasta-sm.jpg" alt="Fettuccine with king prawns" loading="lazy" width="800" height="533">
+            </button>
+          </li>
+          <li class="gallery__item gallery__item--tall">
+            <button class="gallery__btn" type="button" data-full="assets/img/bar.jpg">
+              <img src="assets/img/bar-sm.jpg" alt="The bar with cocktails" loading="lazy" width="800" height="533">
+            </button>
+          </li>
+          <li class="gallery__item">
+            <button class="gallery__btn" type="button" data-full="assets/img/pizza.jpg">
+              <img src="assets/img/pizza-sm.jpg" alt="Margherita pizza" loading="lazy" width="800" height="533">
+            </button>
+          </li>
+          <li class="gallery__item">
+            <button class="gallery__btn" type="button" data-full="assets/img/risotto.jpg">
+              <img src="assets/img/risotto-sm.jpg" alt="Wild mushroom risotto" loading="lazy" width="800" height="533">
+            </button>
+          </li>
+          <li class="gallery__item">
+            <button class="gallery__btn" type="button" data-full="assets/img/lasagna.jpg">
+              <img src="assets/img/lasagna-sm.jpg" alt="Lasagne Bolognese" loading="lazy" width="800" height="533">
+            </button>
+          </li>
+          <li class="gallery__item">
+            <button class="gallery__btn" type="button" data-full="assets/img/tiramisu.jpg">
+              <img src="assets/img/tiramisu-sm.jpg" alt="Tiramisù with berries" loading="lazy" width="800" height="533">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ Booking ============ -->
+    <section class="section section--alt booking" id="booking" aria-labelledby="booking-title">
+      <div class="container booking__inner">
+        <div class="booking__intro">
+          <p class="eyebrow">Reservations</p>
+          <h2 class="section__title" id="booking-title">Book a table</h2>
+          <p>Send us a request and we will call you back within 15 minutes to confirm. For groups of more than 10, please call us.</p>
+          <a class="booking__phone" href="tel:+4447473349111">+4447473349111</a>
+        </div>
+
+        <form class="form" id="booking-form" action="/api/bookings" method="post" novalidate
+              data-hours="[{&quot;open&quot;:&quot;12:00&quot;,&quot;close&quot;:&quot;23:00&quot;,&quot;closed&quot;:false},{&quot;open&quot;:&quot;12:00&quot;,&quot;close&quot;:&quot;23:00&quot;,&quot;closed&quot;:false},{&quot;open&quot;:&quot;12:00&quot;,&quot;close&quot;:&quot;23:00&quot;,&quot;closed&quot;:false},{&quot;open&quot;:&quot;12:00&quot;,&quot;close&quot;:&quot;23:00&quot;,&quot;closed&quot;:false},{&quot;open&quot;:&quot;12:00&quot;,&quot;close&quot;:&quot;01:00&quot;,&quot;closed&quot;:false},{&quot;open&quot;:&quot;12:00&quot;,&quot;close&quot;:&quot;01:00&quot;,&quot;closed&quot;:false},{&quot;open&quot;:&quot;12:00&quot;,&quot;close&quot;:&quot;22:30&quot;,&quot;closed&quot;:false}]" data-last-seating="90">
+          <div class="form__grid">
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="80" placeholder="Your name">
+              <p class="field__error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required
+                     pattern="[+]?[0-9\s()\-]{10,20}" placeholder="+44 7700 900000">
+              <p class="field__error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="f-date">Date</label>
+              <input id="f-date" name="date" type="date" required>
+              <p class="field__error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="f-time">Time</label>
+              <select id="f-time" name="time" required>
+                <option value="">Choose a date first</option>
+              </select>
+              <p class="field__error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="f-guests">Guests</label>
+              <select id="f-guests" name="guests" required><option value="1">1 guest</option><option value="2" selected>2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option><option value="7">7 guests</option><option value="8">8 guests</option><option value="9">9 guests</option><option value="10">10 guests</option></select>
+            </div>
+            <div class="field">
+              <label for="f-zone">Seating</label>
+              <select id="f-zone" name="zone"><option value="No preference">No preference</option><option value="By the window">By the window</option><option value="At the bar">At the bar</option><option value="Terrace (seasonal)">Terrace (seasonal)</option></select>
+            </div>
+            <div class="field field--full">
+              <label for="f-comment">Notes <span class="field__opt">(optional)</span></label>
+              <textarea id="f-comment" name="comment" rows="3" maxlength="500" placeholder="Occasion, dietary requirements, high chair…"></textarea>
+            </div>
+          </div>
+
+          <p class="form__error" id="form-error" role="alert" hidden></p>
+          <button class="btn btn--primary btn--lg btn--block" type="submit">Request booking</button>
+          <p class="form__hint">We only use your details to manage this booking.</p>
+
+          <div class="form__success" id="form-success" role="status" tabindex="-1" hidden></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="section" id="contacts" aria-labelledby="contacts-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section__title" id="contacts-title">Find us</h2>
+        </header>
+
+        <div class="contacts">
+          <div class="contact-card">
+            <h3>Address</h3>
+            <p>12 Riverside Walk, Bankside<br>London SE1 9XX<br>5 minutes&#39; walk from Southwark and Blackfriars stations</p>
+            <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Bankside%2C%20London%20SE1" target="_blank" rel="noopener">Open in Maps ↗</a>
+          </div>
+          <div class="contact-card">
+            <h3>Opening hours</h3>
+            <dl class="hours">
+              <div><dt>Mon – Thu</dt><dd>12:00 – 23:00</dd></div>
+              <div><dt>Fri – Sat</dt><dd>12:00 – 01:00</dd></div>
+              <div><dt>Sun</dt><dd>12:00 – 22:30</dd></div>
+            </dl>
+            <p class="contact-card__note">The kitchen closes one hour before the restaurant.</p>
+          </div>
+          <div class="contact-card">
+            <h3>Get in touch</h3>
+            <p><a class="link" href="tel:+4447473349111">+4447473349111</a></p>
+            <p><a class="link" href="mailto:contact.restuaran@gmail.com">contact.restuaran@gmail.com</a></p>
+            <ul class="socials">
+              <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+              <li><a href="https://tiktok.com/" target="_blank" rel="noopener">TikTok</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo" href="#top" aria-label="Olivo — back to top">
+        <span class="logo__mark" aria-hidden="true">O</span>
+        <span class="logo__text">Olivo</span>
+      </a>
+      <p>© <span id="year">2026</span> Olivo. All rights reserved.</p>
+      <a class="link" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Gallery lightbox -->
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <button class="lightbox__close" type="button" data-action="close" aria-label="Close">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" data-action="prev" aria-label="Previous photo">‹</button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" id="lightbox-img" src="" alt="">
+      <figcaption class="lightbox__caption" id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" type="button" data-action="next" aria-label="Next photo">›</button>
+  </dialog>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

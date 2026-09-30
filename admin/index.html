@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin · Olivo</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <!-- Login -->
+  <main class="login" id="login" hidden>
+    <form class="login__card" id="login-form">
+      <div class="brand"><span class="brand__mark">O</span> Admin</div>
+      <h1>Sign in</h1>
+      <p class="muted">Only the site owner can edit the content.</p>
+      <label class="fld">
+        <span>Password</span>
+        <input type="password" id="login-password" autocomplete="current-password" required autofocus>
+      </label>
+      <p class="alert" id="login-error" role="alert" hidden></p>
+      <button class="btn btn--primary btn--block" type="submit">Log in</button>
+      <a class="muted small" href="/">← Back to the site</a>
+    </form>
+  </main>
+
+  <!-- Editor -->
+  <div class="app" id="app" hidden>
+    <header class="topbar">
+      <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="Sections" aria-expanded="false">☰</button>
+      <div class="brand"><span class="brand__mark">O</span> <span id="brand-name">Olivo</span> <span class="muted">admin</span></div>
+      <div class="topbar__actions">
+        <a class="btn btn--ghost btn--sm" href="/" target="_blank" rel="noopener">View site ↗</a>
+        <button class="btn btn--ghost btn--sm" id="logout" type="button">Log out</button>
+      </div>
+    </header>
+
+    <nav class="sidebar" id="sidebar" aria-label="Admin sections">
+      <button class="sidebar__link" data-section="general" type="button">General</button>
+      <button class="sidebar__link" data-section="menu" type="button">Menu &amp; prices</button>
+      <button class="sidebar__link" data-section="about" type="button">About</button>
+      <button class="sidebar__link" data-section="gallery" type="button">Gallery</button>
+      <button class="sidebar__link" data-section="contact" type="button">Contact &amp; hours</button>
+      <button class="sidebar__link" data-section="bookings" type="button">Bookings <span class="badge" id="bookings-badge" hidden></span></button>
+      <button class="sidebar__link" data-section="settings" type="button">Password</button>
+    </nav>
+
+    <main class="content" id="content" tabindex="-1"></main>
+
+    <div class="savebar" id="savebar" hidden>
+      <span>You have unsaved changes</span>
+      <div class="savebar__actions">
+        <button class="btn btn--ghost btn--sm" id="discard" type="button">Discard</button>
+        <button class="btn btn--primary btn--sm" id="save" type="button">Save &amp; publish</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image picker -->
+  <dialog class="picker" id="picker" aria-labelledby="picker-title">
+    <div class="picker__head">
+      <h2 id="picker-title">Choose a photo</h2>
+      <button class="icon-btn" type="button" data-close aria-label="Close">×</button>
+    </div>
+    <div class="picker__tools">
+      <label class="btn btn--primary btn--sm">
+        Upload new photo
+        <input type="file" id="upload-input" accept="image/jpeg,image/png,image/webp" hidden>
+      </label>
+      <span class="muted small" id="upload-status"></span>
+    </div>
+    <ul class="picker__grid" id="picker-grid"></ul>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script src="admin.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "olivo-restaurant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Restaurant website with a password-protected admin panel",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "set-password": "node scripts/set-password.js",
+    "build": "node scripts/build.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

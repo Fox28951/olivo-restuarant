@@ -1,0 +1,320 @@
+{
+  "site": {
+    "name": "Olivo",
+    "eyebrow": "Ristorante & Bar · Since 2016",
+    "heroLead": "Italian cooking, a wood-fired oven and panoramic views over the Thames. A place for long dinners and important evenings.",
+    "heroImage": "assets/img/interior.jpg",
+    "metaDescription": "Olivo is an Italian restaurant and bar on the Thames in London: handmade pasta, wood-fired pizza, steaks and signature cocktails. Book a table online."
+  },
+  "contacts": {
+    "addressLine1": "12 Riverside Walk, Bankside",
+    "addressLine2": "London SE1 9XX",
+    "directions": "5 minutes' walk from Southwark and Blackfriars stations",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bankside%2C%20London%20SE1",
+    "phone": "+4447473349111",
+    "email": "contact.restuaran@gmail.com",
+    "socials": [
+      {
+        "label": "Instagram",
+        "url": "https://instagram.com/"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://facebook.com/"
+      },
+      {
+        "label": "TikTok",
+        "url": "https://tiktok.com/"
+      }
+    ]
+  },
+  "hours": [
+    {
+      "day": "Monday",
+      "open": "12:00",
+      "close": "23:00",
+      "closed": false
+    },
+    {
+      "day": "Tuesday",
+      "open": "12:00",
+      "close": "23:00",
+      "closed": false
+    },
+    {
+      "day": "Wednesday",
+      "open": "12:00",
+      "close": "23:00",
+      "closed": false
+    },
+    {
+      "day": "Thursday",
+      "open": "12:00",
+      "close": "23:00",
+      "closed": false
+    },
+    {
+      "day": "Friday",
+      "open": "12:00",
+      "close": "01:00",
+      "closed": false
+    },
+    {
+      "day": "Saturday",
+      "open": "12:00",
+      "close": "01:00",
+      "closed": false
+    },
+    {
+      "day": "Sunday",
+      "open": "12:00",
+      "close": "22:30",
+      "closed": false
+    }
+  ],
+  "hoursNote": "The kitchen closes one hour before the restaurant.",
+  "menu": {
+    "title": "Seasonal Italian classics",
+    "lead": "Cooked with British farm produce and imported Italian cheeses. Our pasta is made by hand every morning.",
+    "note": "A discretionary 12.5% service charge will be added to your bill. Please tell your server about any allergies.",
+    "categories": [
+      {
+        "title": "Pasta & Risotto",
+        "items": [
+          {
+            "name": "Fettuccine with King Prawns",
+            "description": "Tiger prawns, cream sauce, cherry tomatoes, Parmigiano Reggiano, micro herbs.",
+            "price": "£24",
+            "image": "assets/img/pasta.jpg",
+            "tag": "Signature",
+            "tagStyle": ""
+          },
+          {
+            "name": "Wild Mushroom Risotto",
+            "description": "Carnaroli rice, porcini and chestnut mushrooms, truffle oil, aged Parmesan.",
+            "price": "£21",
+            "image": "assets/img/risotto.jpg",
+            "tag": "Vegetarian",
+            "tagStyle": "veg"
+          },
+          {
+            "name": "Lasagne Bolognese",
+            "description": "Beef ragù slow-cooked for six hours, béchamel, mozzarella, fresh basil.",
+            "price": "£19",
+            "image": "assets/img/lasagna.jpg",
+            "tag": "",
+            "tagStyle": ""
+          },
+          {
+            "name": "Spaghetti Carbonara",
+            "description": "Guanciale, egg yolk, Pecorino Romano, freshly cracked black pepper.",
+            "price": "£17",
+            "image": "",
+            "tag": "",
+            "tagStyle": ""
+          }
+        ]
+      },
+      {
+        "title": "Pizza",
+        "items": [
+          {
+            "name": "Margherita",
+            "description": "48-hour sourdough, San Marzano tomatoes, fior di latte, basil.",
+            "price": "£14",
+            "image": "assets/img/pizza.jpg",
+            "tag": "Vegetarian",
+            "tagStyle": "veg"
+          },
+          {
+            "name": "Diavola",
+            "description": "Spicy spianata salami, mozzarella, tomato, chilli honey.",
+            "price": "£17",
+            "image": "",
+            "tag": "Spicy",
+            "tagStyle": "hot"
+          },
+          {
+            "name": "Quattro Formaggi",
+            "description": "Mozzarella, gorgonzola, taleggio, Parmesan, toasted walnuts.",
+            "price": "£17",
+            "image": "",
+            "tag": "",
+            "tagStyle": ""
+          },
+          {
+            "name": "Prosciutto & Rocket",
+            "description": "18-month Parma ham, rocket, cherry tomatoes, shaved Parmesan.",
+            "price": "£19",
+            "image": "",
+            "tag": "",
+            "tagStyle": ""
+          }
+        ]
+      },
+      {
+        "title": "Mains",
+        "items": [
+          {
+            "name": "Grilled Ribeye",
+            "description": "300g marbled beef, asparagus, roasted garlic, mashed potato, red wine jus.",
+            "price": "£42",
+            "image": "assets/img/steak.jpg",
+            "tag": "Chef's choice",
+            "tagStyle": ""
+          },
+          {
+            "name": "Wood-roasted Sea Bass",
+            "description": "Whole sea bass, lemon, capers, rosemary new potatoes.",
+            "price": "£32",
+            "image": "",
+            "tag": "",
+            "tagStyle": ""
+          },
+          {
+            "name": "Ossobuco alla Milanese",
+            "description": "Braised veal shank, saffron risotto, gremolata.",
+            "price": "£34",
+            "image": "",
+            "tag": "",
+            "tagStyle": ""
+          }
+        ]
+      },
+      {
+        "title": "Desserts",
+        "items": [
+          {
+            "name": "Tiramisù",
+            "description": "Mascarpone, savoiardi, espresso, cocoa, fresh berries.",
+            "price": "£10",
+            "image": "assets/img/tiramisu.jpg",
+            "tag": "Signature",
+            "tagStyle": ""
+          },
+          {
+            "name": "Panna Cotta",
+            "description": "Vanilla cream, passion fruit coulis, pistachio crumb.",
+            "price": "£9",
+            "image": "",
+            "tag": "",
+            "tagStyle": ""
+          },
+          {
+            "name": "Affogato",
+            "description": "Vanilla gelato drowned in a double espresso.",
+            "price": "£7",
+            "image": "",
+            "tag": "",
+            "tagStyle": ""
+          }
+        ]
+      },
+      {
+        "title": "Bar",
+        "items": [
+          {
+            "name": "Negroni",
+            "description": "Gin, Campari, sweet vermouth, orange zest.",
+            "price": "£14",
+            "image": "assets/img/bar.jpg",
+            "tag": "Classic",
+            "tagStyle": ""
+          },
+          {
+            "name": "Aperol Spritz",
+            "description": "Aperol, Prosecco, soda, orange slice.",
+            "price": "£13",
+            "image": "",
+            "tag": "",
+            "tagStyle": ""
+          },
+          {
+            "name": "Olivo Martini",
+            "description": "Our olive-oil-washed martini with Nocellara olives.",
+            "price": "£15",
+            "image": "",
+            "tag": "",
+            "tagStyle": ""
+          },
+          {
+            "name": "Wine by the Glass",
+            "description": "More than 40 wines from Tuscany, Piedmont and Veneto. Ask our sommelier.",
+            "price": "from £9",
+            "image": "",
+            "tag": "",
+            "tagStyle": ""
+          }
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "An Italian dinner with a view of the city",
+    "paragraphs": [
+      "Olivo started with a simple idea: cook honest Italian food the way it is cooked at home in Tuscany, and serve it somewhere you want to stay a little longer.",
+      "Olive trees grow in the dining room, the wood-fired oven is always lit, and the floor-to-ceiling windows look out across the Thames to St Paul's. The bar stays open until the last guest leaves, and our sommelier will find a wine for any dish."
+    ],
+    "image": "assets/img/bar.jpg",
+    "accentImage": "assets/img/pizza.jpg",
+    "stats": [
+      {
+        "value": "10",
+        "label": "years on the river"
+      },
+      {
+        "value": "40+",
+        "label": "wines by the glass"
+      },
+      {
+        "value": "90",
+        "label": "seats inside and on the terrace"
+      }
+    ]
+  },
+  "gallery": [
+    {
+      "image": "assets/img/interior.jpg",
+      "alt": "The dining room at night with a view across the river"
+    },
+    {
+      "image": "assets/img/steak.jpg",
+      "alt": "Grilled ribeye steak"
+    },
+    {
+      "image": "assets/img/pasta.jpg",
+      "alt": "Fettuccine with king prawns"
+    },
+    {
+      "image": "assets/img/bar.jpg",
+      "alt": "The bar with cocktails"
+    },
+    {
+      "image": "assets/img/pizza.jpg",
+      "alt": "Margherita pizza"
+    },
+    {
+      "image": "assets/img/risotto.jpg",
+      "alt": "Wild mushroom risotto"
+    },
+    {
+      "image": "assets/img/lasagna.jpg",
+      "alt": "Lasagne Bolognese"
+    },
+    {
+      "image": "assets/img/tiramisu.jpg",
+      "alt": "Tiramisù with berries"
+    }
+  ],
+  "booking": {
+    "text": "Send us a request and we will call you back within 15 minutes to confirm. For groups of more than 10, please call us.",
+    "maxGuests": 10,
+    "lastSeatingMinutes": 90,
+    "zones": [
+      "No preference",
+      "By the window",
+      "At the bar",
+      "Terrace (seasonal)"
+    ]
+  }
+}
