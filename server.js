@@ -10,7 +10,7 @@ import { buildIndex } from './lib/render.js';
 import { loadBookings, saveBookings, validateBooking, STATUSES } from './lib/bookings.js';
 import {
   requireAdmin, sameOrigin, hasSession, startSession, endSession,
-  isPasswordSet, verifyPassword, setPassword, MIN_PASSWORD_LENGTH,
+  isPasswordSet, passwordSource, verifyPassword, setPassword, MIN_PASSWORD_LENGTH,
   isLockedOut, recordFailure, clearFailures,
 } from './lib/auth.js';
 
@@ -65,7 +65,7 @@ app.get('/api/admin/session', (req, res) => {
 
 app.post('/api/admin/login', express.json({ limit: '2kb' }), (req, res) => {
   if (!sameOrigin(req)) return res.status(403).json({ error: 'Cross-site request blocked.' });
-  if (!isPasswordSet()) return res.status(503).json({ error: 'No admin password yet. Run "npm run set-password" on the server.' });
+  if (!isPasswordSet()) return res.status(503).json({ error: 'No admin password yet. Set ADMIN_PASSWORD on the host or run "npm run set-password".' });
   if (isLockedOut(req.ip)) return res.status(429).json({ error: 'Too many failed attempts. Try again in 15 minutes.' });
 
   if (!verifyPassword(req.body?.password)) {
@@ -164,6 +164,9 @@ admin.delete('/bookings/:id', (req, res) => {
 
 admin.post('/password', (req, res) => {
   const { current, next } = req.body || {};
+  if (passwordSource() === 'env') {
+    return res.status(409).json({ error: 'The password is set by the ADMIN_PASSWORD environment variable. Change it in your hosting settings.' });
+  }
   if (!verifyPassword(current)) return res.status(400).json({ error: 'Current password is wrong.' });
   if (typeof next !== 'string' || next.length < MIN_PASSWORD_LENGTH) {
     return res.status(400).json({ error: `New password must be at least ${MIN_PASSWORD_LENGTH} characters.` });
@@ -191,5 +194,11 @@ buildIndex(sanitizeContent(loadContent()));
 app.listen(PORT, () => {
   console.log(`Site:  http://localhost:${PORT}`);
   console.log(`Admin: http://localhost:${PORT}/admin`);
-  if (!isPasswordSet()) console.log('No admin password yet — run: npm run set-password');
+  const source = passwordSource();
+  if (source === 'env') console.log('Admin password: from ADMIN_PASSWORD environment variable');
+  else if (source === 'file') console.log('Admin password: from data/admin.json');
+  else console.log('No admin password yet — set ADMIN_PASSWORD or run: npm run set-password');
+  if (source === 'env' && process.env.ADMIN_PASSWORD.length < MIN_PASSWORD_LENGTH) {
+    console.warn(`Warning: ADMIN_PASSWORD is shorter than ${MIN_PASSWORD_LENGTH} characters.`);
+  }
 });

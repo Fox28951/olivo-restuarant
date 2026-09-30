@@ -599,7 +599,7 @@
     try {
       const session = await api('/api/admin/session');
       if (session.loggedIn) await startApp();
-      else showLogin(session.passwordSet ? '' : 'No admin password has been set yet. Run "npm run set-password" on the server.');
+      else showLogin(session.passwordSet ? '' : 'No admin password has been set yet. Set ADMIN_PASSWORD on the host or run "npm run set-password" on the server.');
     } catch (err) {
       showLogin('Cannot reach the server. Is it running?');
     }
